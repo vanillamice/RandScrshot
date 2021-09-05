@@ -11,7 +11,7 @@ result_nmbr = ''.join((random.choice(string.ascii_lowercase) for i in range(2)))
 result_ltr = ''.join((random.choice(string.digits) for i in range(4)))
 result_str = result_nmbr + result_ltr
 URLMAIN = "https://prnt.sc/"+result_str
-#print (URLMAIN)
+print (URLMAIN)
 
 
 requester = {'User-Agent': 'Mozilla/5.0'}
@@ -32,8 +32,9 @@ for img in soup.findAll('img'):
     
 img=random.choice(images)
     
-#print(img)
-
-URLL = img
-webbrowser.open(URLL, new=1)
+print(img)
+if(img == "//st.prntscr.com/2021/04/08/1538/img/footer-logo.png"):
+    print("Not found!")
+else:
+    webbrowser.open(img, new=1)
 
