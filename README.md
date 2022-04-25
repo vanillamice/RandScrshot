@@ -3,7 +3,7 @@ Python script that opens random cloud saved screenshots from LightShot users.
 
 
 
-#How does it work?
+# How does it work?
 The script first randomizes a URL then scrapes images off it. If it's empty it returns an error in the CLI and tries again.If it successfuly find an image on the random URL it opens it in a new browser window.
 
 # How to run:
